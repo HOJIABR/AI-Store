@@ -1,0 +1,285 @@
+/* header styles */
+header {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  /* background-color: #787878; */
+  height: 85px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* header end  */
+
+/* section 1 */
+
+.sectionHome {
+  width: 100%;
+  height: 720px;
+  background-image: url("../assets/img/png/Rectangle 6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section__inf {
+  display: flex;
+  justify-content: center;
+}
+
+.section__inner {
+  margin-top: 114px;
+  text-align: center;
+  color: #fff;
+}
+
+.section__inf--text {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section__inf--content {
+  margin: 0 auto;
+  margin-top: 33px;
+  max-width: 661px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.98px; /* 33.98px */
+}
+
+.section__filter {
+  margin-top: 97px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter__inner {
+  width: 85%;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  height: 86px;
+  border-radius: 45px;
+  border: 3px solid #bb9bea;
+  background: #d5daf4;
+  box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.25) inset,
+    0px -4px 8px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.btn__filter {
+  cursor: pointer;
+  width: 100%;
+  height: 86px;
+  border: 0;
+  background: initial;
+  border-radius: 46px;
+
+  color: #663db0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.active {
+  border-radius: 47px;
+  background: #9f72e7;
+  box-shadow: 0px 16px 13px 2px #bc9eeb inset, 0px -7px 12px 2px #8357c9 inset,
+    5px 0px 11px -3px rgba(31, 30, 32, 0.25),
+    -5px 0px 11px -3px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.dropDownBnt {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 85px;
+  /* padding:; */
+}
+
+.dropDownBnt__img {
+  cursor: pointer;
+}
+
+/* section Cartes */
+
+.section__cartes {
+  margin-top: 55px;
+}
+
+.cartes__inner {
+  color: #afafaf;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cartes__inner > p {
+  max-width: 384px;
+  height: 58px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #cb00e9 0%, #7402ad 100%);
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show__oll--cartes {
+  cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  color: #cb00e9;
+  align-items: center;
+  max-width: 385px;
+  border-radius: 25px;
+  padding: 21px 16px;
+  border: 2px solid #cb00e9;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.show__oll--cartes > p {
+  color: #cb00e9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.wrapper__seorch--input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 19px 24px;
+  border-radius: 25px;
+  max-width: 381px;
+  border: none;
+}
+
+.seorch__cart--input {
+  border: 0;
+  width: 100%;
+  color: #afafaf;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.seorch__cart--input:focus {
+  outline: none;
+}
+
+.seorch__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  margin-bottom: 30px;
+}
+.selected {
+  display: none;
+}
+
+.wrapper__chekBox {
+  display: flex;
+  gap: 51px;
+}
+
+.chekBox__inner {
+  display: flex;
+  gap: 9px;
+}
+
+/*  NeuralNetwork */
+.wrapper__bagraund--mini {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/img/png/Rectangle mini.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.neural__container > p {
+  text-align: center;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.navigation__strel{
+  color: #fff;
+  margin-top: 27px;
+  
+  text-align: center;
+}
+/*  NeuralNetwork end */
+
+/* footer */
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+}
+
+.contactes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__public {
+  padding-top: 40px;
+  text-align: center;
+  color: #787878;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* footer end */

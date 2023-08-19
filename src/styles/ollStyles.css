@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #f3f3f3;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button {
+  border: none;
+  background: initial;
+}
+.container {
+  max-width: 1464px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #362f2d;
+  color: #fff;
+  height: 163px;
+}
+.page__Promty {
+  height: 85px;
+  background: #362F2D;
+}
+
+select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: initial;
+  color: #afafaf;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+
+  outline: none;
+  border: 0;
+}
+
+select > option{
+   background: #f3f3f3;
+}
+
+.cheked{
+  height: 25px;
+  width: 25px;
+}
