@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header";
+import Footer from "../Footer"
 import Cartes from "../Cartes";
 
 export default function NeuralNetwork() {
@@ -15,7 +16,8 @@ export default function NeuralNetwork() {
 
           </div>
         </div>
-        <Cartes />
+        <Cartes/>
+        <Footer/>
       </div>
     </>
   );

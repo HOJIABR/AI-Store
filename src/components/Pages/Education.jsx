@@ -6,6 +6,7 @@ export default function Education() {
     <>
       <div className="page__Promty">
         <Header />
+        <></>
       </div>
     </>
   )

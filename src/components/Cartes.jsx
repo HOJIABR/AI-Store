@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import dropDown from "../assets/img/svg/down-arrow-cart.svg";
 import seorchIcon from "../assets/img/svg/seorchIcon.svg";
 import dropDownSelect from "../assets/img/svg/down-arrow-select.svg";
+import axios from "axios";
+import pred from "../assets/img/png/cart.png";
+const src = "http://localhost:3000/cart";
 
 function Cartes() {
+  const [articles, setArticles] = useState([]);
+  useEffect(() => {
+    axios.get(src).then((data) => {
+      setArticles(data.data);
+    });
+  }, []);
   return (
     <>
-      <div className="container section__cartes">
+      <div className="section__cartes">
         <div className="cartes__inner">
           <div className="seorch__cart">
             <div className="wrapper__seorch--input">
@@ -39,6 +48,21 @@ function Cartes() {
             </div>
           </div>
           <p>Самые популярные нейросети</p>
+          <div className="wrapper__oll--cartes">
+            {articles.map((articl) => {
+              return (
+                <div className="carts__warpper">
+                  <img className="img__cart" src={pred} alt="" />
+                  <h1 className="name__Ai">{articl.textHeader}</h1>
+                  <span className="cart__context">{articl.textContent}</span>
+                  <div className="wrapper__carts--footer">
+                    <span className="Ai__della">{articl.Aidell}</span>
+                    {/* <img src={} alt="" /> */}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
           <button className="show__oll--cartes">
             <img src={dropDown} alt="" />
             <p>Смотреть все</p>
@@ -51,3 +75,13 @@ function Cartes() {
 }
 
 export default Cartes;
+
+// {articles.map((articl) => {
+//   return (
+//     <div className="carts__warpper">
+//       <img src={pred} alt="" />
+//       <h1 className="name__Ai">{articl.textHeader}</h1>
+//       <span className="cart__context">{articl.textContent}</span>
+//     </div>
+//   );
+// })}

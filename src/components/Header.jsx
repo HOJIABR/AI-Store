@@ -17,7 +17,7 @@ function Header() {
               </li>
               <a href="#" className="logo">
                 <Link to="/">
-                  <img src={logo} alt="" srcset="" />
+                  <img  src={logo} alt="" srcset="" />
                 </Link>
               </a>
               <li>
@@ -27,6 +27,11 @@ function Header() {
                 <Link to="/Advertising">Реклама</Link>
               </li>
             </ul>
+            <div className="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </nav>
         </div>
         <Outlet />

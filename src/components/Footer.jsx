@@ -10,7 +10,7 @@ function footer() {
           <a href="#" className="logo">
             <img src={logo} alt="logo" srcset="" />
           </a>
-          <nav className="menu">
+          <nav className="menu menu__footer">
             <ul className="menu__list">
               <li>
                 <a href="#">Нейросети</a>
@@ -31,7 +31,7 @@ function footer() {
               <p>Связаться с нами:</p>
               <div className="footer__social">
                 <div className="footer__social-item">
-                  <a href="#">
+                  <a  href="#">
                     <img src={telegram} alt="telegram" />
                   </a>
                 </div>
