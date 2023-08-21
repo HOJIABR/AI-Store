@@ -340,6 +340,90 @@ header {
 }
 /*  NeuralNetwork end */
 
+/* edukation */
+.wrapper__education {
+  height: 635px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    360deg,
+    #b9a1ff 0%,
+    rgba(253, 251, 255, 0.79) 45.41%,
+    #f2cdff 100%
+  );
+}
+.education__top {
+  display: flex;
+  max-width: 1427px;
+  padding-left: 25px;
+  padding-right: 25px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.wrapper__education-text {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.wrapper__education__img {
+  width: 50%;
+}
+.wrapper__education-text > p {
+  width: 100%;
+  color: #c700e6;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wrapper__education__img > img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper__contact {
+  max-width: 1427px;
+  height: 241px;
+  display: flex;
+  border-radius: 27px;
+  background: red;
+  margin: 0 auto;
+  margin-top: 27px;
+  box-shadow: 7px 7px 11px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 38px;
+}
+
+.wrapper__contact__left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wrapper__contact__left > p {
+  position: relative;
+  max-width: 534px;
+  color: #c700e6;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 2;
+}
+.bacgraund__sorcl {
+  height: 241px;
+  background: #388f50;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.wrapper__contact__right {
+  background: #000;
+}
+/* education end */
+
 /* footer */
 
 .footer__inner {
@@ -386,6 +470,9 @@ header {
 
   .menu__list {
     gap: 25px;
+  }
+  .wrapper__education-text > p {
+    font-size: 35px;
   }
 }
 
@@ -452,6 +539,9 @@ header {
     margin-top: 7px;
   }
 
+  .wrapper__education-text > p {
+    font-size: 30px;
+  }
   .section__inf--text {
     color: #f3f3f3;
     text-align: center;

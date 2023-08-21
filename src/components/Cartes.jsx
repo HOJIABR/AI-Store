@@ -52,13 +52,9 @@ function Cartes() {
             {articles.map((articl) => {
               return (
                 <div className="carts__warpper">
-                  <img className="img__cart" src={pred} alt="" />
+                  <img src={pred} alt="" />
                   <h1 className="name__Ai">{articl.textHeader}</h1>
                   <span className="cart__context">{articl.textContent}</span>
-                  <div className="wrapper__carts--footer">
-                    <span className="Ai__della">{articl.Aidell}</span>
-                    {/* <img src={} alt="" /> */}
-                  </div>
                 </div>
               );
             })}
