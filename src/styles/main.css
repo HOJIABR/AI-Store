@@ -422,6 +422,37 @@ header {
 .wrapper__contact__right {
   background: #000;
 }
+
+.wrapper__text--bottom {
+  max-width: 1427px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  box-shadow: 7px 7px 11px 0px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 20px;
+}
+
+.wrapper__text--bottom > h1 {
+  margin-bottom: 19.5px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper__text--bottom > p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 /* education end */
 
 /* footer */
