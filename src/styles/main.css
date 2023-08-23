@@ -19,8 +19,9 @@ header {
   background: #fff;
 }
 
-.burger:active {
-  background: #000;
+.burger__active {
+  transition: 0.3s;
+  background-color: red;
 }
 
 .menu {
@@ -575,6 +576,10 @@ header {
 }
 
 @media (max-width: 771px) {
+  .menu-btn {
+    display: flex;
+    height: 10px;
+  }
   .sectionHome {
     height: 959px;
   }
@@ -622,9 +627,6 @@ header {
   }
   .dropDownBnt {
     margin-top: 70px;
-  }
-  .seorch__cart {
-    display: block;
   }
 
   .wrapper__seorch--input {

@@ -9,7 +9,7 @@ function Promty() {
         <div className="wrapper__bagraund--mini">
           <div className="container  neural__container ">
             {/* strelkali novigatsiya boladi iinobatga o'ling!!!! */}
-            <span className="navigation__strel">Главная --Нейросетм</span>
+            <span className="navigation__strel">Главная -- Промты</span>
             <p>Промты</p>
           </div>
         </div>

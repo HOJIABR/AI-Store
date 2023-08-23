@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header";
+import Footer from "../Footer";
 import hend from "../../assets/img/svg/hend.svg";
 
 export default function Advertising() {
@@ -28,6 +29,7 @@ export default function Advertising() {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </>
   );

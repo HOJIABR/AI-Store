@@ -3,6 +3,17 @@ import { Outlet, Link } from "react-router-dom";
 import logo from "../assets/img/svg/logo.svg";
 
 function Header() {
+  const menuBtn = document.querySelector(".menu-btn");
+  let menuOpen = false;
+  menuBtn.addEventListener("click", () => {
+    if (!menuOpen) {
+      menuBtn.classList.add("open");
+      menuOpen = true;
+    } else {
+      menuBtn.classList.remove("open");
+      menuOpen = false;
+    }
+  });
   return (
     <>
       <header>
@@ -17,7 +28,7 @@ function Header() {
               </li>
               <a href="#" className="logo">
                 <Link to="/">
-                  <img  src={logo} alt="" srcset="" />
+                  <img src={logo} alt="" srcset="" />
                 </Link>
               </a>
               <li>
@@ -27,10 +38,8 @@ function Header() {
                 <Link to="/Advertising">Реклама</Link>
               </li>
             </ul>
-            <div className="burger">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="menu-btn">
+              <div class="menu-btn__burger"></div>
             </div>
           </nav>
         </div>
@@ -41,3 +50,15 @@ function Header() {
 }
 
 export default Header;
+
+// const menuBtn = document.querySelector('.menu-btn');
+// let menuOpen = false;
+// menuBtn.addEventListener('click', () => {
+//   if(!menuOpen) {
+//     menuBtn.classList.add('open');
+//     menuOpen = true;
+//   } else {
+//     menuBtn.classList.remove('open');
+//     menuOpen = false;
+//   }
+// });
