@@ -400,20 +400,28 @@ header {
   margin-bottom: 38px;
 }
 
-.wrapper__telegram--coll{
+.wrapper__telegram--coll {
   display: flex;
   align-items: center;
+  justify-content: end;
+  width: 400px;
 }
 
-.bacgraund__telegram--inner{
+.bacgraund__telegram--inner {
   display: flex;
+  align-items: center;
   background-image: url("../assets/img/svg/telegram__hend.svg");
   background-repeat: no-repeat;
-  width: 100%;
+  width: 277px;
   height: 290px;
 }
 
-
+.bacgraund__telegram--inner > img{
+  max-width: 100%;
+  height: auto;
+  /* transform: translateX(-29%); */
+  transform: translateY(10%);
+}
 
 /* rgb(201 126 245) */
 .salom {
@@ -432,7 +440,7 @@ header {
 
 .salom1 {
   max-width: 397px;
-  padding-top:50px;
+  padding-top: 50px;
   padding-left: 52px;
   color: #fff;
   font-family: Montserrat;
