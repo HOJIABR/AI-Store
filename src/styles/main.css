@@ -427,7 +427,6 @@ header {
 .education__text {
   display: flex;
   align-items: center;
-  width: 36%;
   padding-top: 58px;
   padding-bottom: 58px;
   padding-left: 40px;
