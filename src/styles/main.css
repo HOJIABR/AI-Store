@@ -410,6 +410,7 @@ header {
 .bacgraund__telegram--inner {
   display: flex;
   align-items: center;
+  cursor: pointer;
   background-image: url("../assets/img/svg/telegram__hend.svg");
   background-repeat: no-repeat;
   width: 277px;
@@ -419,7 +420,6 @@ header {
 .bacgraund__telegram--inner > img {
   max-width: 100%;
   height: auto;
-  /* transform: translateX(-29%); */
   transform: translateY(10%);
 }
 
