@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header";
 import ReclamCarts from "../ReclamCarts";
 import imgHeader from "../../assets/img/png/education__header.png";
+import hend from "../../assets/img/svg/hend.svg";
 import Footer from "../Footer";
 
 export default function Education() {
@@ -31,8 +32,8 @@ export default function Education() {
             Напиши нам о своём курсе и мы разместим у себя на сайте
           </p>
           <div className="wrapper__telegram--coll">
-            <div className="bacgraund__telegram">
-                <div className="begraund__telegram--inner"></div>
+            <div className="bacgraund__telegram--inner">
+              <img src={hend} alt="" />
             </div>
           </div>
         </div>

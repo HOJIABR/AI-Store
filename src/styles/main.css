@@ -404,15 +404,16 @@ header {
   display: flex;
   align-items: center;
 }
-.bacgraund__telegram{
+
+.bacgraund__telegram--inner{
+  display: flex;
   background-image: url("../assets/img/svg/telegram__hend.svg");
   background-repeat: no-repeat;
+  width: 100%;
+  height: 290px;
 }
 
-.begraund__telegram--inner{
-  background-image: url("../assets/img/svg/telegram__hend.svg");
-  background-repeat: no-repeat;
-}
+
 
 /* rgb(201 126 245) */
 .salom {
