@@ -1,19 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import logo from "../assets/img/svg/logo.svg";
 
 function Header() {
-  const menuBtn = document.querySelector(".menu-btn");
-  let menuOpen = false;
-  menuBtn.addEventListener("click", () => {
-    if (!menuOpen) {
-      menuBtn.classList.add("open");
-      menuOpen = true;
-    } else {
-      menuBtn.classList.remove("open");
-      menuOpen = false;
-    }
-  });
+  const [salom, setSalom] = useState(false);
+  const salom1 = () => {
+    setSalom(!salom);
+  };
   return (
     <>
       <header>
@@ -38,8 +31,8 @@ function Header() {
                 <Link to="/Advertising">Реклама</Link>
               </li>
             </ul>
-            <div class="menu-btn">
-              <div class="menu-btn__burger"></div>
+            <div onClick={salom1} className={`menu-btn ${salom ? "open" : ""}`}>
+              <div className="menu-btn__burger"></div>
             </div>
           </nav>
         </div>
