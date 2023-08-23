@@ -24,11 +24,10 @@ export default function Education() {
           </div>
         </div>
         <div className="wrapper__contact">
-          <div className="kadrat"></div>
-          <p className="salom">
+          <p className="education__text">
             Приглашаем авторов онлайн-курсов по работе с нейросетями
           </p>
-          <p className="salom1">
+          <p className="education__text--end">
             Напиши нам о своём курсе и мы разместим у себя на сайте
           </p>
           <div className="wrapper__telegram--coll">

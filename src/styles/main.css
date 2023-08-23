@@ -416,7 +416,7 @@ header {
   height: 290px;
 }
 
-.bacgraund__telegram--inner > img{
+.bacgraund__telegram--inner > img {
   max-width: 100%;
   height: auto;
   /* transform: translateX(-29%); */
@@ -424,10 +424,12 @@ header {
 }
 
 /* rgb(201 126 245) */
-.salom {
+.education__text {
   display: flex;
   align-items: center;
   width: 36%;
+  padding-top: 58px;
+  padding-bottom: 58px;
   padding-left: 40px;
   padding-right: 44px;
   color: #c700e6;
@@ -438,9 +440,10 @@ header {
   line-height: normal;
 }
 
-.salom1 {
+.education__text--end {
+  display: flex;
+  align-items: center;
   max-width: 397px;
-  padding-top: 50px;
   padding-left: 52px;
   color: #fff;
   font-family: Montserrat;
