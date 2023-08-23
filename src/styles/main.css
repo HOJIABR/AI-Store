@@ -387,14 +387,71 @@ header {
 
 .wrapper__contact {
   max-width: 1427px;
+  background-color: rgb(201 126 245);
+  background-image: radial-gradient(circle, #fff 50%, rgb(201 126 245) 50%);
+  background-position: left -387px center;
+  background-repeat: no-repeat;
   height: 241px;
   display: flex;
   border-radius: 27px;
-  background: red;
   margin: 0 auto;
   margin-top: 27px;
   box-shadow: 7px 7px 11px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 38px;
+}
+
+.wrapper__telegram--coll{
+  display: flex;
+  align-items: center;
+}
+.bacgraund__telegram{
+  background-image: url("../assets/img/svg/telegram__hend.svg");
+  background-repeat: no-repeat;
+}
+
+.begraund__telegram--inner{
+  background-image: url("../assets/img/svg/telegram__hend.svg");
+  background-repeat: no-repeat;
+}
+
+/* rgb(201 126 245) */
+.salom {
+  display: flex;
+  align-items: center;
+  width: 36%;
+  padding-left: 40px;
+  padding-right: 44px;
+  color: #c700e6;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.salom1 {
+  max-width: 397px;
+  padding-top:50px;
+  padding-left: 52px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.uzun {
+  position: relative;
+  width: 64%;
+  z-index: 100;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: #000;
 }
 
 .wrapper__contact__left {
@@ -415,7 +472,6 @@ header {
 }
 .bacgraund__sorcl {
   height: 241px;
-  background: #388f50;
   border-radius: 10px 10px 10px 10px;
 }
 

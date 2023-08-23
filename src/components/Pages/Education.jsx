@@ -23,9 +23,16 @@ export default function Education() {
           </div>
         </div>
         <div className="wrapper__contact">
-          <div className="wrapper__contact__left">
-            <div className="bacgraund__sorcl">
-              <p>Приглашаем авторов онлайн-курсов по работе с нейросетями</p>
+          <div className="kadrat"></div>
+          <p className="salom">
+            Приглашаем авторов онлайн-курсов по работе с нейросетями
+          </p>
+          <p className="salom1">
+            Напиши нам о своём курсе и мы разместим у себя на сайте
+          </p>
+          <div className="wrapper__telegram--coll">
+            <div className="bacgraund__telegram">
+                <div className="begraund__telegram--inner"></div>
             </div>
           </div>
         </div>
