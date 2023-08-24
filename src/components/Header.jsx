@@ -3,9 +3,9 @@ import { Outlet, Link } from "react-router-dom";
 import logo from "../assets/img/svg/logo.svg";
 
 function Header() {
-  const [salom, setSalom] = useState(false);
-  const salom1 = () => {
-    setSalom(!salom);
+  const [openBurger, setOpenBurger] = useState(false);
+  const handleShowLinks = () => {
+    setOpenBurger(!openBurger);
   };
   return (
     <>
@@ -31,7 +31,7 @@ function Header() {
                 <Link to="/Advertising">Реклама</Link>
               </li>
             </ul>
-            <div onClick={salom1} className={`menu-btn ${salom ? "open" : ""}`}>
+            <div onClick={handleShowLinks} className={`menu-btn ${openBurger ? "open" : ""}`}>
               <div className="menu-btn__burger"></div>
             </div>
           </nav>
