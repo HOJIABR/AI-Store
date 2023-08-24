@@ -1,6 +1,5 @@
 // import Header from "./components/header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
 import HomePage from "./components/Pages/HomePage";
 import NeuralNetwork from "./components/Pages/NeuralNetwork";
 import Advertising from "./components/Pages/Advertising";

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header";
+import Salom from "../GptCart";
 
 function Promty() {
   return (
@@ -17,6 +18,7 @@ function Promty() {
           </div>
         </div>
       </div>
+      <Salom/>
     </>
   );
 }
