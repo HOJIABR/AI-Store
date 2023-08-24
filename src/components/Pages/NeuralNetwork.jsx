@@ -14,10 +14,11 @@ export default function NeuralNetwork() {
           {/* strelkali novigatsiya boladi iinobatga o'ling!!!! */}
           <p className="navigation__strel">Главная --Нейросетм</p>
           <p className="name__Page">Нейросети</p>
+          <p></p>
         </div>
-        <Cartes />
-        <Footer />
       </div>
+      <Cartes />
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import Cartes from "../Cartes";
 import hend from "../../assets/img/svg/hend.svg";
 
 export default function Advertising() {
@@ -14,7 +15,9 @@ export default function Advertising() {
           <p className="navigation__strel">Главная -- Реклама</p>
           <p className="name__Page">Реклама</p>
         </div>
-        <div className="wrapper__contact">
+      </div>
+      <div className="wrapper__contact">
+        <div className="wrapper__inner">
           <p className="education__text">
             Если у вас есть продукт или услуга, которую можно продвигать через
             рекламу
@@ -28,8 +31,9 @@ export default function Advertising() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+      <Cartes />
+      <Footer />
     </>
   );
 }

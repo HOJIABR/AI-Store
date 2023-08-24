@@ -8,7 +8,7 @@ function headerSection() {
   return (
     <>
       <div className="sectionHome">
-          <Header />
+        <Header />
         <div className="container section__inf">
           <div className="section__inner">
             <h1 className="section__inf--text">Онлайн Каталог - Нейросети</h1>
@@ -30,10 +30,9 @@ function headerSection() {
             <img className="" src={dropDown} alt="" />
           </button>
         </div>
-
-        <Cartes />
-        <Footer />
       </div>
+      <Cartes />
+      <Footer />
     </>
   );
 }

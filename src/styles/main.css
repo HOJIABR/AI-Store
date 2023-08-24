@@ -23,8 +23,6 @@ header {
 /* section 1 */
 
 .sectionHome {
-  width: 100%;
-  height: 720px;
   background-image: url("../assets/img/png/Rectangle 6.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -231,6 +229,7 @@ header {
 
 .navigation__strel {
   margin-top: 27px;
+  margin-bottom: 26px;
   color: #fff;
   font-family: Montserrat;
   font-size: 16px;
@@ -334,7 +333,9 @@ header {
 }
 
 .link__on--Ai {
+  cursor: pointer;
   width: 233px;
+  margin-bottom: 40px;
   background: rgb(58 31 141);
   height: 53px;
   border-radius: 53px;
@@ -345,7 +346,6 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  
 }
 
 /* edukation */
@@ -394,6 +394,14 @@ header {
 }
 
 .wrapper__contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.wrapper__inner {
   max-width: 1427px;
   background-color: rgb(201 126 245);
   background-image: radial-gradient(circle, #fff 50%, rgb(201 126 245) 50%);
@@ -402,10 +410,7 @@ header {
   height: 241px;
   display: flex;
   border-radius: 27px;
-  margin: 0 auto;
-  margin-top: 27px;
   box-shadow: 7px 7px 11px 0px rgba(0, 0, 0, 0.15);
-  margin-bottom: 38px;
 }
 
 .wrapper__telegram--coll {
@@ -553,9 +558,6 @@ header {
 /* media */
 
 @media (max-width: 991px) {
-  .sectionHome {
-    height: 800px;
-  }
   .menu__footer {
     display: none;
   }
@@ -573,9 +575,7 @@ header {
     display: flex;
     height: 10px;
   }
-  .sectionHome {
-    height: 959px;
-  }
+
   .header__inner {
     position: absolute;
     top: 40px;
@@ -678,9 +678,6 @@ header {
 }
 
 @media (max-width: 376px) {
-  .sectionHome {
-    height: 800px;
-  }
   .section__inner {
     margin-top: 134px;
   }

@@ -4,7 +4,7 @@ import Header from "../Header";
 function Promty() {
   return (
     <>
-      <div className="page__Promty">
+      <div className="page__Promty--One">
         <div className="rang">
           <Header />
         </div>
