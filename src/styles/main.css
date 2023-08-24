@@ -228,30 +228,15 @@ header {
 }
 
 /*  NeuralNetwork */
-.wrapper__bagraund--mini {
-  width: 100%;
-  height: 200px;
-  background-image: url("../assets/img/png/Rectangle mini.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.neural__container > p {
-  text-align: center;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0 auto;
-}
 
 .navigation__strel {
-  color: #fff;
   margin-top: 27px;
-  text-align: center;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .wrapper__oll--cartes {
@@ -264,13 +249,6 @@ header {
   padding-left: 50px;
   margin-top: 48px;
   margin-bottom: 29px;
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 33px;
-  justify-content: center;
-  margin: 0 auto;
-
-  */
 }
 .carts__warpper {
   max-width: 356px;
@@ -284,6 +262,7 @@ header {
 }
 
 .carts__warpper > img {
+  cursor: pointer;
   width: 100%;
   height: auto;
 }
@@ -311,6 +290,22 @@ header {
   font-weight: 400;
   line-height: normal;
 }
+
+.wrapper__bot {
+  display: flex;
+}
+
+.cart__bot {
+  border-radius: 11px;
+  padding: 7px 14px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #388f50;
+}
 .Ai__della {
   margin-top: 2px;
   display: flex;
@@ -329,6 +324,29 @@ header {
   line-height: normal;
 }
 /*  NeuralNetwork end */
+
+/* Promty */
+.wrapper__Ai-novigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.link__on--Ai {
+  width: 233px;
+  background: rgb(58 31 141);
+  height: 53px;
+  border-radius: 53px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  
+}
 
 /* edukation */
 .wrapper__education {
@@ -413,7 +431,6 @@ header {
   transform: translateY(10%);
 }
 
-/* rgb(201 126 245) */
 .education__text {
   display: flex;
   align-items: center;
@@ -440,19 +457,6 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-
-.uzun {
-  position: relative;
-  width: 64%;
-  z-index: 100;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background: #000;
 }
 
 .wrapper__contact__left {
@@ -737,11 +741,3 @@ header {
     line-height: normal;
   }
 }
-/* 
-.salom {
-  position: absolute;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-
-} */

@@ -55,6 +55,10 @@ function Cartes() {
                   <img src={pred} alt="" />
                   <h1 className="name__Ai">{articl.textHeader}</h1>
                   <span className="cart__context">{articl.textContent}</span>
+                  <div className="wrapper__bot">
+                    <span className="cart__bot">{articl.text__bot}</span>
+                    
+                  </div>
                 </div>
               );
             })}

@@ -8,8 +8,9 @@ import Footer from "../Footer";
 export default function Education() {
   return (
     <>
-      <div className="page__Promty">
-        <Header />
+        <div className="rang">
+          <Header />
+        </div>
         <div className="wrapper__education">
           <div className="education__top">
             <div className="wrapper__education-text">
@@ -65,7 +66,7 @@ export default function Education() {
           </p>
         </div>
         <Footer />
-      </div>
+      
     </>
   );
 }

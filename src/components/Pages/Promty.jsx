@@ -5,12 +5,15 @@ function Promty() {
   return (
     <>
       <div className="page__Promty">
-        <Header />
-        <div className="wrapper__bagraund--mini">
-          <div className="container  neural__container ">
-            {/* strelkali novigatsiya boladi iinobatga o'ling!!!! */}
-            <span className="navigation__strel">Главная -- Промты</span>
-            <p>Промты</p>
+        <div className="rang">
+          <Header />
+        </div>
+        <div className="container">
+          <p className="navigation__strel">Главная - Промты - ChatGPT</p>
+          <p className="name__Page">Промты</p>
+          <div className="wrapper__Ai-novigation">
+            <button className="link__on--Ai">ChatGPT</button>
+            <button className="link__on--Ai">Midjourney</button>
           </div>
         </div>
       </div>

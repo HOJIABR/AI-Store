@@ -1,23 +1,22 @@
 import React from "react";
 import Header from "../Header";
-import Footer from "../Footer"
+import Footer from "../Footer";
 import Cartes from "../Cartes";
 
 export default function NeuralNetwork() {
   return (
     <>
       <div className="page__Promty">
-        <Header />
-        <div className="wrapper__bagraund--mini">
-          <div className="container  neural__container ">
-             {/* strelkali novigatsiya boladi iinobatga o'ling!!!! */}
-            <span className="navigation__strel">Главная --Нейросетм</span>
-            <p>Нейросети</p>
-
-          </div>
+        <div className="rang">
+          <Header />
         </div>
-        <Cartes/>
-        <Footer/>
+        <div className="container ">
+          {/* strelkali novigatsiya boladi iinobatga o'ling!!!! */}
+          <p className="navigation__strel">Главная --Нейросетм</p>
+          <p className="name__Page">Нейросети</p>
+        </div>
+        <Cartes />
+        <Footer />
       </div>
     </>
   );

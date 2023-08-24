@@ -7,13 +7,12 @@ export default function Advertising() {
   return (
     <>
       <div className="page__Promty">
-        <Header />
-        <div className="wrapper__bagraund--mini">
-          <div className="container  neural__container ">
-            {/* strelkali novigatsiya boladi iinobatga o'ling!!!! */}
-            <span className="navigation__strel">Главная -- Реклама</span>
-            <p>Реклама</p>
-          </div>
+        <div className="rang">
+          <Header />
+        </div>
+        <div className="container">
+          <p className="navigation__strel">Главная -- Реклама</p>
+          <p className="name__Page">Реклама</p>
         </div>
         <div className="wrapper__contact">
           <p className="education__text">
@@ -29,7 +28,7 @@ export default function Advertising() {
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

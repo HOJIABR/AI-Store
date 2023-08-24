@@ -45,8 +45,11 @@ footer {
   height: 163px;
 }
 .page__Promty {
-  height: 85px;
-  background: #362f2d;
+  background-image: url("../assets/img/png/Rectangle mini.png");
+  background-size: cover;
+  height: 277px;
+  background-repeat: no-repeat;
+
 }
 
 select {
@@ -127,3 +130,16 @@ select > option {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.rang{
+  background: #362F2D;
+}
+
+.name__Page{
+  color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}

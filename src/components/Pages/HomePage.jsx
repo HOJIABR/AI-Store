@@ -1,14 +1,14 @@
 import React from "react";
 import dropDown from "../../assets/img/svg/down-arrow.svg";
 import Header from "../Header";
-import  Cartes from "../Cartes"
+import Cartes from "../Cartes";
 import Footer from "../Footer";
 
 function headerSection() {
   return (
     <>
       <div className="sectionHome">
-        <Header />
+          <Header />
         <div className="container section__inf">
           <div className="section__inner">
             <h1 className="section__inf--text">Онлайн Каталог - Нейросети</h1>
@@ -27,11 +27,11 @@ function headerSection() {
             <button className="btn__filter">Для бизнеса</button>
           </div>
           <button className="dropDownBnt">
-          <img className="" src={dropDown} alt="" />
-        </button>
+            <img className="" src={dropDown} alt="" />
+          </button>
         </div>
-       
-        <Cartes/>
+
+        <Cartes />
         <Footer />
       </div>
     </>
