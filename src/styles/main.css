@@ -353,14 +353,19 @@ header {
   border-radius: 53px;
   opacity: 0.8;
   margin-bottom: 40px;
-  background-color: rgb(21 32 123);
   color: #fff;
   text-align: center;
   font-family: Montserrat;
   font-size: 15px;
+  transition: 0.6s;
+  background: linear-gradient(to left, #8e2de2, #4a00e0, #8e2d32);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.wrapper__Ai-novigation > a:hover {
+  background-position: -233px;
 }
 
 .link__on--Ai {

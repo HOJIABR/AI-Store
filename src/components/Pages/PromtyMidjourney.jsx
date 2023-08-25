@@ -14,7 +14,7 @@ export default function PromtyMidjourney() {
           <p className="name__Page">Промты</p>
           <div className="wrapper__Ai-novigation">
             <Link to="/Promty">Промты</Link>
-            <Link to="/PromtyMidjourney">Обучение</Link>
+            <Link to="/PromtyMidjourney">Midjourney</Link>
           </div>
         </div>
       </div>
