@@ -1,13 +1,8 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
 import Header from "../Header";
-import Footer from "../Footer";
-import GptCart from "../GptCart";
+import { Link } from "react-router-dom";
 
-function Promty() {
-  function Salom() {
-    console.log("salom");
-  }
+export default function PromtyMidjourney() {
   return (
     <>
       <div className="page__Promty--One">
@@ -15,7 +10,7 @@ function Promty() {
           <Header />
         </div>
         <div className="container">
-          <p className="navigation__strel">Главная - Промты - ChatGPT</p>
+          <p className="navigation__strel">Главная - Промты - Midjourney</p>
           <p className="name__Page">Промты</p>
           <div className="wrapper__Ai-novigation">
             <Link to="/Promty">Промты</Link>
@@ -23,10 +18,6 @@ function Promty() {
           </div>
         </div>
       </div>
-      <GptCart />
-      <Footer />
     </>
   );
 }
-
-export default Promty;

@@ -123,16 +123,6 @@ header {
   margin-top: 55px;
 }
 
-.cartes__inner {
-  color: #afafaf;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 .cartes__inner > p {
   max-width: 384px;
   height: 58px;
@@ -206,6 +196,8 @@ header {
   display: flex;
   justify-content: center;
   gap: 21px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-bottom: 30px;
 }
 .selected {
@@ -348,7 +340,27 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  color: #fff;
   gap: 30px;
+}
+
+.wrapper__Ai-novigation > a {
+  width: 233px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 53px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+  background-color: rgb(21 32 123);
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .link__on--Ai {
@@ -464,7 +476,7 @@ header {
   padding-right: 44px;
   color: #c700e6;
   font-family: Montserrat;
-  font-size: 32px;
+  font-size: calc(9px + 19 * (100vw / 1427));
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -477,7 +489,7 @@ header {
   padding-left: 52px;
   color: #fff;
   font-family: Montserrat;
-  font-size: 32px;
+  font-size: calc(9px + 19 * (100vw / 1427));
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -589,7 +601,7 @@ header {
   }
 }
 
-@media (max-width: 771px) {
+@media (max-width: 768px) {
   .menu-btn {
     display: flex;
     height: 10px;
@@ -756,4 +768,9 @@ header {
     font-weight: 400;
     line-height: normal;
   }
+}
+
+#salom {
+  max-width: 100%;
+  height: auto;
 }

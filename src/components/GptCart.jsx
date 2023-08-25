@@ -4,12 +4,11 @@ import dropDownSelect from "../assets/img/svg/down-arrow-select.svg";
 import axios from "axios";
 const src = "http://localhost:3000/GptCrts";
 
-export default function Salom() {
+export default function GptCart() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     axios.get(src).then((data) => {
       setArticles(data.data);
-      console.log(data.data);
     });
   }, []);
   return (
