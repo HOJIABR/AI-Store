@@ -5,7 +5,7 @@ import Cartes from "../Cartes";
 import Pagination from "./Pagination";
 import axios from "axios";
 
-const src = "http://64.226.102.92:8000/api/v1/neauralnetwork/list/";
+const src = "https://64.226.102.92:8000/api/v1/neauralnetwork/list/";
 
 export default function NeuralNetwork() {
   const [articles, setArticles] = useState([]);
