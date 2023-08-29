@@ -27,11 +27,11 @@ function headerSection() {
             <button className="btn__filter">Для бизнеса</button>
           </div>
           <button className="dropDownBnt">
-            <img className="" src={dropDown} alt="" />
+            <img className="" srcSet={dropDown} alt="" />
           </button>
         </div>
       </div>
-      <Cartes />
+      {/* <Cartes /> */}
       <Footer />
     </>
   );

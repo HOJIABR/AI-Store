@@ -20,7 +20,7 @@ export default function GptCart() {
             type="text"
             placeholder="Поиск промтов"
           />
-          <img src={seorchIcon} alt="" />
+          <img srcSet={seorchIcon} alt="" />
         </div>
         <div className="wrapper__seorch--input">
           <select className="tasks" name="tasks" id="tasks">
@@ -30,7 +30,7 @@ export default function GptCart() {
             <option value="tasks">2</option>
             <option value="tasks">3</option>
           </select>
-          <img src={dropDownSelect} alt="" />
+          <img srcSet={dropDownSelect} alt="" />
         </div>
       </div>
       <div className="wrapper__oll--cartes">

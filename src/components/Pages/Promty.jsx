@@ -5,9 +5,7 @@ import Footer from "../Footer";
 import GptCart from "../GptCart";
 
 function Promty() {
-  function Salom() {
-    console.log("salom");
-  }
+
   return (
     <>
       <div className="page__Promty--One">

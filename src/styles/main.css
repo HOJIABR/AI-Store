@@ -232,7 +232,8 @@ header {
 .wrapper__oll--cartes {
   max-width: 1434px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,1fr);
   margin: 0 auto;
   gap: 33px;
   padding-right: 50px;
@@ -241,7 +242,7 @@ header {
   margin-bottom: 29px;
 }
 .carts__warpper {
-  max-width: 356px;
+  max-width: 456px;
   border-radius: 25px;
   background: #fff;
   padding-top: 16px;
@@ -283,6 +284,7 @@ header {
 
 .wrapper__bot {
   display: flex;
+  align-items: center;
 }
 
 .cart__bot {
@@ -443,7 +445,6 @@ header {
   background-image: radial-gradient(circle, #fff 50%, rgb(201 126 245) 50%);
   background-position: left -387px center;
   background-repeat: no-repeat;
-  height: 241px;
   display: flex;
   border-radius: 27px;
   box-shadow: 7px 7px 11px 0px rgba(0, 0, 0, 0.15);
@@ -481,7 +482,7 @@ header {
   padding-right: 44px;
   color: #c700e6;
   font-family: Montserrat;
-  font-size: calc(9px + 19 * (100vw / 1427));
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -494,7 +495,7 @@ header {
   padding-left: 52px;
   color: #fff;
   font-family: Montserrat;
-  font-size: calc(9px + 19 * (100vw / 1427));
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -525,35 +526,15 @@ header {
   background: #000;
 }
 
-.wrapper__text--bottom {
-  max-width: 1427px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 48px;
-  padding-right: 48px;
-  margin: 0 auto;
-  margin-bottom: 64px;
-  box-shadow: 7px 7px 11px 0px rgba(0, 0, 0, 0.15);
-  background: #fff;
-  border-radius: 20px;
+.wrapper__text--bottom{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
-.wrapper__text--bottom > h1 {
-  margin-bottom: 19.5px;
-  color: #000;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.wrapper__text--bottom > p {
-  color: #000;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+.wrapper_content--education{
+  max-width: 1427px;
+  
 }
 /* education end */
 

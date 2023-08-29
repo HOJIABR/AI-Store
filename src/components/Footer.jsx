@@ -32,7 +32,7 @@ function footer() {
               <div className="footer__social">
                 <div className="footer__social-item">
                   <a  href="#">
-                    <img src={telegram} alt="telegram" />
+                    <img srcSet={telegram} alt="telegram" />
                   </a>
                 </div>
               </div>

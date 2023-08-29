@@ -148,3 +148,34 @@ select > option {
   font-weight: 700;
   line-height: normal;
 }
+
+/* paginatin  */
+
+.paginagtion {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 77px;
+}
+
+.page-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e01bf;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.page-item:hover{
+  background-color: #8e01bf;
+  color: #fff;
+}

@@ -1,18 +1,56 @@
-import React, { useEffect, useState } from "react";
-import dropDown from "../assets/img/svg/down-arrow-cart.svg";
+import { useState } from "react";
 import seorchIcon from "../assets/img/svg/seorchIcon.svg";
 import dropDownSelect from "../assets/img/svg/down-arrow-select.svg";
-import axios from "axios";
-import pred from "../assets/img/png/cart.png";
-const src = "http://localhost:3000/cart";
-
-function Cartes() {
-  const [articles, setArticles] = useState([]);
-  useEffect(() => {
-    axios.get(src).then((data) => {
-      setArticles(data.data);
-    });
-  }, []);
+import forAdults from "../assets/img/svg/18+.svg";
+const Cartes = ({ articles, loading }) => {
+  
+  const [searchValue, setSearchValue] = useState("");
+  console.log()
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+  const carts = articles.filter((obj) => {
+    if (obj.title.toLowerCase().includes(searchValue.toLowerCase())) {
+      return true;
+    }
+    return false;
+  }).map((articl, i) => {
+    return (
+      <div className="carts__warpper">
+        <img srcSet={articl.image} alt="" />
+        <h1 className="name__Ai">{articl.title}</h1>
+        <span className="cart__context">{articl.description}</span>
+        <div className="wrapper__bot">
+          <span className="cart__bot">{articl.zadacha}</span>
+          <img
+            src={(articl.icon_18 = true ? forAdults : "")}
+            alt=""
+            srcset=""
+          />
+          <img
+            src={(articl.icon_18 = true ? forAdults : "")}
+            alt=""
+            srcset=""
+          />
+          <img
+            src={(articl.icon_18 = true ? forAdults : "")}
+            alt=""
+            srcset=""
+          />
+          <img
+            src={(articl.icon_18 = true ? forAdults : "")}
+            alt=""
+            srcset=""
+          />
+          <img
+            src={(articl.icon_18 = true ? forAdults : "")}
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    );
+  });
   return (
     <>
       <div className="section__cartes">
@@ -20,21 +58,23 @@ function Cartes() {
           <div className="seorch__cart">
             <div className="wrapper__seorch--input">
               <input
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
                 className="seorch__cart--input"
                 type="text"
                 placeholder="Поиск нейросетей"
               />
-              <img src={seorchIcon} alt="" />
+              <img srcSet={seorchIcon} alt="" />
             </div>
             <div className="wrapper__seorch--input">
               <select className="tasks" name="tasks" id="tasks">
-                <option selected className="selected" value="tasks">
+                <option selected className="selected" value="1">
                   Задачи
                 </option>
-                <option value="tasks">2</option>
-                <option value="tasks">3</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
-              <img src={dropDownSelect} alt="" />
+              <img srcSet={dropDownSelect} alt="" />
             </div>
             <div className="wrapper__chekBox">
               <div className="chekBox__inner">
@@ -49,38 +89,12 @@ function Cartes() {
           </div>
           <p>Самые популярные нейросети</p>
           <div className="wrapper__oll--cartes">
-            {articles.map((articl) => {
-              return (
-                <div className="carts__warpper">
-                  <img src={pred} alt="" />
-                  <h1 className="name__Ai">{articl.textHeader}</h1>
-                  <span className="cart__context">{articl.textContent}</span>
-                  <div className="wrapper__bot">
-                    <span className="cart__bot">{articl.text__bot}</span>
-                  </div>
-                </div>
-              );
-            })}
+            {carts}
           </div>
-          <button className="show__oll--cartes">
-            <img src={dropDown} alt="" />
-            <p>Смотреть все</p>
-            <img src={dropDown} alt="" />
-          </button>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Cartes;
-
-// {articles.map((articl) => {
-//   return (
-//     <div className="carts__warpper">
-//       <img src={pred} alt="" />
-//       <h1 className="name__Ai">{articl.textHeader}</h1>
-//       <span className="cart__context">{articl.textContent}</span>
-//     </div>
-//   );
-// })}

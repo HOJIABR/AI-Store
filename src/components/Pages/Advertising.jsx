@@ -27,12 +27,12 @@ export default function Advertising() {
           </p>
           <div className="wrapper__telegram--coll">
             <div className="bacgraund__telegram--inner">
-              <img src={hend} alt="" />
+              <img srcSet={hend} alt="" />
             </div>
           </div>
         </div>
       </div>
-      <Cartes />
+      {/* <Cartes /> */}
       <Footer />
     </>
   );
